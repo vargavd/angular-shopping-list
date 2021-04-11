@@ -5,12 +5,29 @@
                 Item Name
             </h3>
             <div class="text-muted font-weight-light">
-                <ng-container *ngIf="inCurrentList">
+                <ng-container *ngIf="!inCurrentList">
                     3 qty |
                 </ng-container>
                 Last: 2021 april 1
             </div>
         </div>
-        <i class="fa fa-pencil text-secondary"></i>
+        <ng-container *ngIf="!inCurrentList">
+            <div class="input-group w-auto">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" (click)="decreaseQuantity()">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                </div>
+                <input type="text" class="form-control" class="quantity" readonly [(ngModel)]='quantity'>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" (click)="increaseQuantity()">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="inCurrentList">
+            <i class="fa fa-pencil text-secondary"></i>
+        </ng-container>
     </div>
 </div>

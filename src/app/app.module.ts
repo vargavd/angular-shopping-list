@@ -8,6 +8,7 @@ import { ShoppingsPageComponent } from './shoppings-page/shoppings-page.componen
 import { CurrentItemsListComponent } from './items-page/current-items-list/current-items-list.component';
 import { EveryItemsListComponent } from './items-page/every-items-list/every-items-list.component';
 import { ItemComponent } from './items-page/item/item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { ItemComponent } from './items-page/item/item.component';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
     selector: 'vdsl-item',
@@ -6,15 +6,23 @@ import { Component, OnInit, Output } from '@angular/core';
     styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-    @Output() inCurrentList: boolean = false;
+    public quantity: number = 1;
+
+    @Input() inCurrentList: boolean = false;
 
     constructor() { }
 
     ngOnInit(): void {
     }
 
-    getRandomQuantity() {
-        return Math.random() * 5;
+    increaseQuantity() {
+        this.quantity++;
+    }
+
+    decreaseQuantity() {
+        if (this.quantity > 1) {
+            this.quantity--;
+        }
     }
 
 }
