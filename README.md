@@ -1,27 +1,23 @@
-# VdAngularShoppingList
+# Shopping list for learning Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+This project is a learning tool for me to revive my Angular knowledge, as well as for making a shopping webapp for myself, for helping with my recurring online shoppings.
 
-## Development server
+## Features (in progress)
+  - Two distinct shopping list - one for the "next" shopping, and one where every item ever bought is stored
+  - You can "reset" the current shopping list - it will create another shopping storing the date and items that were on the current list
+  - Shopping list - list the shoppings with date as openable panels - you can see which items were bought at every shopping
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Used in this project:
+  - Angular 11.1.2
+  - Bootstrap 4.6
+  - Font Awesome 4.7
+  - Courage :)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## How to run it
+Clone or download this repository and run *npm install*, then *ng serve -o*. It will generate the app and open it in your default browser. You will also need [Angular installed](https://angular.io/guide/setup-local#install-the-angular-cli) on your system.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+---
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+***TODO for myself: add testings as well!!***
