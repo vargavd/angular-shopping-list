@@ -7,6 +7,7 @@ import { ItemsPageComponent } from './items-page/items-page.component';
 import { ShoppingsPageComponent } from './shoppings-page/shoppings-page.component';
 import { CurrentItemsListComponent } from './items-page/current-items-list/current-items-list.component';
 import { EveryItemsListComponent } from './items-page/every-items-list/every-items-list.component';
+import { ItemComponent } from './items-page/item/item.component';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { EveryItemsListComponent } from './items-page/every-items-list/every-ite
         ItemsPageComponent,
         ShoppingsPageComponent,
         CurrentItemsListComponent,
-        EveryItemsListComponent
+        EveryItemsListComponent,
+        ItemComponent
     ],
     imports: [
         BrowserModule,
