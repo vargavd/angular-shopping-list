@@ -9,9 +9,6 @@
         <h2 class="h3">Current list</h2>
     </div>
     <div class="card-body">
-        <vdsl-item [inCurrentList]="false"></vdsl-item>
-        <vdsl-item [inCurrentList]="false"></vdsl-item>
-        <vdsl-item [inCurrentList]="false"></vdsl-item>
-        <vdsl-item [inCurrentList]="false"></vdsl-item>
+        <vdsl-item [inCurrentList]="true" *ngFor="let item of items" [item]="item"></vdsl-item>
     </div>
 </div>

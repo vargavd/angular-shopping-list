@@ -19,5 +19,3 @@ This project is a learning tool for me to revive my Angular knowledge, as well a
 Clone or download this repository and run *npm install*, then *ng serve -o*. It will generate the app and open it in your default browser. You will also need [Angular installed](https://angular.io/guide/setup-local#install-the-angular-cli) on your system.
 
 ---
-
-***TODO for myself: add testings as well!!***

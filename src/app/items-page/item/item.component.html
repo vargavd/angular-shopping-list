@@ -1,17 +1,21 @@
 <div class="item card border-secondary my-2">
     <div class="card-header d-flex justify-content-between align-items-center">
-        <div>
-            <h3 class="h5 mb-0">
-                Item Name
-            </h3>
-            <div class="text-muted font-weight-light">
-                <ng-container *ngIf="!inCurrentList">
-                    3 qty |
-                </ng-container>
-                Last: 2021 april 1
+        <div class="d-flex align-items-center">
+            <button *ngIf="!inCurrentList" class="add-to-current btn btn-secondary" title="Add to current">
+                <i class="fa fa-plus"></i>
+            </button>
+            <div>
+                <h3 class="h5 mb-0">
+                    {{item.name}}
+                </h3>
+                <div class="text-muted font-weight-light">
+                    Last: 2021 april 1
+                    <i class="fa fa-info-circle text-info order-info-icon" *ngIf="!inCurrentList"
+                        title="More info about orders"></i>
+                </div>
             </div>
         </div>
-        <ng-container *ngIf="!inCurrentList">
+        <ng-container *ngIf="inCurrentList">
             <div class="input-group w-auto">
                 <div class="input-group-prepend">
                     <button class="btn btn-outline-secondary" type="button" (click)="decreaseQuantity()">
@@ -26,8 +30,8 @@
                 </div>
             </div>
         </ng-container>
-        <ng-container *ngIf="inCurrentList">
+        <button *ngIf="!inCurrentList" class="btn btn-light" title="Edit Item">
             <i class="fa fa-pencil text-secondary"></i>
-        </ng-container>
+        </button>
     </div>
 </div>

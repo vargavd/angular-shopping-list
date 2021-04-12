@@ -3,9 +3,6 @@
         <h2 class="h3">Every item ever purchased</h2>
     </div>
     <div class="card-body">
-        <vdsl-item [inCurrentList]="true"></vdsl-item>
-        <vdsl-item [inCurrentList]="true"></vdsl-item>
-        <vdsl-item [inCurrentList]="true"></vdsl-item>
-        <vdsl-item [inCurrentList]="true"></vdsl-item>
+        <vdsl-item [inCurrentList]="false" *ngFor="let item of items" [item]="item"></vdsl-item>
     </div>
 </div>
