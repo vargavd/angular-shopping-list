@@ -1,69 +1,42 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { IItem } from './item/item.interface';
+import { ItemsService } from './items.service';
 
 @Component({
     selector: 'vdsl-items-page',
     templateUrl: './items-page.component.html',
     styleUrls: ['./items-page.component.scss']
 })
-export class ItemsPageComponent implements OnInit {
-    private items: IItem[] = [
-        {
-            "id": 1,
-            "name": "bread"
-        },
-        {
-            "id": 2,
-            "name": "milk"
-        },
-        {
-            "id": 3,
-            "name": "orange"
-        },
-        {
-            "id": 4,
-            "name": "cake"
-        },
-        {
-            "id": 5,
-            "name": "mineral water"
-        },
-        {
-            "id": 6,
-            "name": "juice"
-        },
-        {
-            "id": 7,
-            "name": "tea"
-        },
-        {
-            "id": 8,
-            "name": "paper"
-        },
-        {
-            "id": 9,
-            "name": "cheese"
-        },
-        {
-            "id": 9,
-            "name": "chocolate"
-        }
-    ];
+export class ItemsPageComponent implements OnInit, OnDestroy {
+    private items: IItem[] = [];
+    private currentItems: IItem[] = [];
+    private subscription!: Subscription;
 
     getAllItems(): IItem[] {
         return this.items;
     }
     getCurrentItems(): IItem[] {
-        return [
-            this.items[0],
-            this.items[3],
-            this.items[9]
-        ];
+        return this.currentItems;
     }
 
-    constructor() { }
+    constructor(private itemsService: ItemsService) { }
 
     ngOnInit(): void {
+        this.subscription = this.itemsService.getItems().subscribe({
+            next: items => {
+                this.items = items;
+
+                this.currentItems = items.filter(item => item.current);
+            },
+            error: error => console.log(error)
+        });
     }
+
+    ngOnDestroy(): void {
+        this.subscription.unsubscribe();
+    }
+
+
 
 }

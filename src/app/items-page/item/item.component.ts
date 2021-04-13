@@ -11,7 +11,7 @@ export class ItemComponent {
 
     // infos from input "attributes"
     @Input() inCurrentList: boolean = false;
-    @Input() item: IItem = { id: 0, name: "dsdsadsa" };
+    @Input() item: IItem = { id: 0, name: "", current: false };
 
     // events
     increaseQuantity() {

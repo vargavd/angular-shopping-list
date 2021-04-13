@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "bread",
+        "current": false
+    },
+    {
+        "id": 2,
+        "name": "milk",
+        "current": true
+    },
+    {
+        "id": 3,
+        "name": "orange",
+        "current": false
+    },
+    {
+        "id": 4,
+        "name": "cake",
+        "current": false
+    },
+    {
+        "id": 5,
+        "name": "mineral water",
+        "current": true
+    },
+    {
+        "id": 6,
+        "name": "juice",
+        "current": false
+    },
+    {
+        "id": 7,
+        "name": "tea",
+        "current": true
+    },
+    {
+        "id": 8,
+        "name": "paper",
+        "current": true
+    },
+    {
+        "id": 9,
+        "name": "cheese",
+        "current": false
+    },
+    {
+        "id": 9,
+        "name": "chocolate",
+        "current": false
+    }
+]

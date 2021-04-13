@@ -1,3 +1,5 @@
-next: get the items from a service
+question: item component initializes its item property with a dummy object first - is this really necessary?
+get the items from a database with rxjs
 Add popovers to buttons and icons
+create a logging service, which logs messages to console during dev and to a logfile in production
 Add testing
