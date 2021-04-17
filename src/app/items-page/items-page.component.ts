@@ -12,13 +12,6 @@ export class ItemsPageComponent implements OnInit, OnDestroy {
     private items: IItem[] = [];
     private subscription!: Subscription;
 
-    getAllItems(): IItem[] {
-        return this.items.filter(item => !item.current);;
-    }
-    getCurrentItems(): IItem[] {
-        return this.items.filter(item => item.current);
-    }
-
     constructor(private itemsService: ItemsService) { }
 
     ngOnInit(): void {

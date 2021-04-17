@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-header">
+        <h2 class="h3">
+            {{ currentItems ? 'Current list' : 'Backlog' }}
+        </h2>
+    </div>
+    <div class="card-body">
+        <vdsl-item [inCurrentList]="currentItems" *ngFor="let item of getItems()" [item]="item"></vdsl-item>
+    </div>
+</div>
