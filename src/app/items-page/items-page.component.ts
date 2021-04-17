@@ -10,14 +10,13 @@ import { ItemsService } from './items.service';
 })
 export class ItemsPageComponent implements OnInit, OnDestroy {
     private items: IItem[] = [];
-    private currentItems: IItem[] = [];
     private subscription!: Subscription;
 
     getAllItems(): IItem[] {
-        return this.items;
+        return this.items.filter(item => !item.current);;
     }
     getCurrentItems(): IItem[] {
-        return this.currentItems;
+        return this.items.filter(item => item.current);
     }
 
     constructor(private itemsService: ItemsService) { }
@@ -26,8 +25,6 @@ export class ItemsPageComponent implements OnInit, OnDestroy {
         this.subscription = this.itemsService.getItems().subscribe({
             next: items => {
                 this.items = items;
-
-                this.currentItems = items.filter(item => item.current);
             },
             error: error => console.log(error)
         });

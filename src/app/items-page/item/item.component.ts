@@ -22,6 +22,9 @@ export class ItemComponent {
             this.quantity--;
         }
     }
+    changeCurrentState() {
+        this.item.current = !this.item.current;
+    }
 
     constructor() { }
 

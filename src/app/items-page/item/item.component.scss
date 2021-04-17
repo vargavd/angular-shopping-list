@@ -11,6 +11,18 @@ input.quantity {
     cursor: pointer;
 }
 
-.add-to-current {
+.add-remove-current {
     margin-right: 10px;
+}
+
+button.remove-button {
+    i.fa {
+        color: #dc3545;
+    }
+
+    &:hover {
+        i.fa {
+            color: white;
+        }
+    }
 }
