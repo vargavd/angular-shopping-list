@@ -17,6 +17,22 @@
         </button>
     </div>
     <div class="modal-body">
-        This is a modal.
+        <div class="list-group order-list" *ngIf="itemInModal.history && itemInModal.history.length > 0">
+            <div class="list-group-item d-flex py-3 px-3 order" *ngFor="let order of itemInModal.history">
+                <div class="date mr-3">
+                    <div class="year">{{ order.date.getFullYear() }}</div>
+                    <div class="month-day">
+                        {{ order.date.getMonth().toString().padStart(2, '0') + '.' +
+                        order.date.getDate().toString().padStart(2, '0') }}
+                    </div>
+                </div>
+                <div class="quantity-and-link">
+                    <div>Quantity: <strong>{{ order.quantity }}</strong></div>
+                    <a [href]="order.link" target="_blank">
+                        {{order.link}}
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </ng-template>

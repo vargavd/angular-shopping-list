@@ -1,0 +1,26 @@
+.order-list {
+    .order {
+        .date {
+            .year {
+                font-size: 23px;
+                line-height: 20px;
+            }
+
+            .month-day {
+                font-size: 19px;
+                font-weight: bold;
+            }
+        }
+
+        .quantity-and-link {
+            div {
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}

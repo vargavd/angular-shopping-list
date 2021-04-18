@@ -35,6 +35,8 @@ export class ItemsPageComponent implements OnInit, OnDestroy {
 
                 if (this.modalRef === undefined && this.items.length > 0) {
                     this.openModal(this.items[0]);
+
+                    console.log(this.items[0]);
                 }
             },
             error: error => console.log(error)

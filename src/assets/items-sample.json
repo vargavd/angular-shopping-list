@@ -2,47 +2,130 @@
     {
         "id": 1,
         "name": "bread",
-        "current": false
+        "current": false,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021.04.01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021.03.20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021.03.10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021.02.1",
+                "quantity": 8,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 2,
         "name": "milk",
-        "current": true
+        "current": true,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 3,
         "name": "orange",
-        "current": false
+        "current": false,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 4,
         "name": "cake",
-        "current": false
+        "current": false,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 5,
         "name": "mineral water",
-        "current": true
+        "current": true,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 6,
         "name": "juice",
-        "current": false
+        "current": false,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 7,
         "name": "tea",
-        "current": true
+        "current": true,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 8,
         "name": "paper",
-        "current": true
+        "current": true,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 9,
         "name": "cheese",
-        "current": false
+        "current": false,
+        "history": [
+            {
+                "date": "2021.04.18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            }
+        ]
     },
     {
         "id": 9,
