@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ItemListComponent } from './items-page/item-list/item-list.component';
 
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -22,7 +24,8 @@ import { ItemListComponent } from './items-page/item-list/item-list.component';
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        HttpClientModule
+        HttpClientModule,
+        ModalModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]

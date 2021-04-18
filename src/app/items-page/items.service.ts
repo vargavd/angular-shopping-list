@@ -14,7 +14,7 @@ export class ItemsService {
 
     getItems(): Observable<IItem[]> {
         return this.http.get<IItem[]>(this.itemsUrl).pipe(
-            tap(data => console.log(data)),
+            //tap(data => console.log(data)),
             catchError(this.handleError)
         );
     }

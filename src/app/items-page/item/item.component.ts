@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { IItem } from './item.interface';
 
 @Component({
@@ -13,6 +13,8 @@ export class ItemComponent {
     @Input() inCurrentList: boolean = false;
     @Input() item: IItem = { id: 0, name: "", current: false };
 
+    @Output() openModalEvent = new EventEmitter<IItem>();
+
     // events
     increaseQuantity() {
         this.quantity++;
@@ -24,6 +26,9 @@ export class ItemComponent {
     }
     changeCurrentState() {
         this.item.current = !this.item.current;
+    }
+    displayModal() {
+        this.openModalEvent.emit(this.item);
     }
 
     constructor() { }

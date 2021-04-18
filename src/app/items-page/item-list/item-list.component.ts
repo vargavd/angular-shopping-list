@@ -1,25 +1,24 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IItem } from '../item/item.interface';
-import { ItemsService } from '../items.service';
 
 @Component({
     selector: 'vdsl-item-list',
     templateUrl: './item-list.component.html',
     styleUrls: ['./item-list.component.scss']
 })
-export class ItemListComponent implements OnInit {
+export class ItemListComponent {
     @Input() items: IItem[] = [];
     @Input() currentItems: boolean = false;
+
+    @Output() openModalEvent = new EventEmitter<IItem>();
 
     getItems() {
         return this.items.filter(item => item.current === this.currentItems);
     }
 
-    constructor() { }
-
-    ngOnInit(): void {
-
+    openModal(item: IItem) {
+        this.openModalEvent.emit(item);
     }
 
+    constructor() { }
 }
