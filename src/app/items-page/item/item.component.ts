@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter, ViewChild, TemplateRef, OnChanges, AfterViewInit } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { IItem } from './item.interface';
 
 @Component({
@@ -13,7 +14,10 @@ export class ItemComponent {
     @Input() inCurrentList: boolean = false;
     @Input() item: IItem = { id: 0, name: "", current: false };
 
-    @Output() openModalEvent = new EventEmitter<IItem>();
+    @Output() openHistoryModalEvent = new EventEmitter<IItem>();
+
+    @ViewChild('itemCurrentLinkTemplate') public itemCurrentLinkTemplate: TemplateRef<any>;
+    public currentLinkModalRef: BsModalRef;
 
     // events
     increaseQuantity() {
@@ -28,9 +32,14 @@ export class ItemComponent {
         this.item.current = !this.item.current;
     }
     displayModal() {
-        this.openModalEvent.emit(this.item);
+        this.openHistoryModalEvent.emit(this.item);
+    }
+    openCurrentLinkModal() {
+        this.currentLinkModalRef = this.modalService.show(this.itemCurrentLinkTemplate);
+    }
+    closeCurrentLinkModal() {
+        this.currentLinkModalRef.hide();
     }
 
-    constructor() { }
-
+    constructor(private modalService: BsModalService) { }
 }

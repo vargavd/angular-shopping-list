@@ -19,12 +19,12 @@ export class ItemsPageComponent implements OnInit, OnDestroy {
 
     constructor(private itemsService: ItemsService, private modalService: BsModalService) { }
 
-    openModal(item: IItem) {
+    openHistoryModalEvent(item: IItem) {
         this.itemInModal = item;
 
         this.modalRef = this.modalService.show(this.itemModalTemplate);
     }
-    closeModal() {
+    closeHistoryModal() {
         this.modalRef.hide();
     }
 
@@ -33,11 +33,11 @@ export class ItemsPageComponent implements OnInit, OnDestroy {
             next: items => {
                 this.items = items;
 
-                if (this.modalRef === undefined && this.items.length > 0) {
-                    this.openModal(this.items[0]);
+                // if (this.modalRef === undefined && this.items.length > 0) {
+                //     this.openHistoryModalEvent(this.items[0]);
 
-                    console.log(this.items[0]);
-                }
+                //     console.log(this.items[0]);
+                // }
             },
             error: error => console.log(error)
         });

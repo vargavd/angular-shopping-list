@@ -5,27 +5,27 @@
         "current": false,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
                 "link": "https://www.google.com"
             },
             {
-                "date": "2021.04.01",
+                "date": "2021-04-01",
                 "quantity": 3,
                 "link": "https://www.google.com"
             },
             {
-                "date": "2021.03.20",
+                "date": "2021-03-20",
                 "quantity": 1,
                 "link": "https://www.google.com"
             },
             {
-                "date": "2021.03.10",
+                "date": "2021-03-10",
                 "quantity": 6,
                 "link": "https://www.google.com"
             },
             {
-                "date": "2021.02.1",
+                "date": "2021-02-01",
                 "quantity": 8,
                 "link": "https://www.google.com"
             }
@@ -37,8 +37,28 @@
         "current": true,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -49,8 +69,28 @@
         "current": false,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -61,8 +101,28 @@
         "current": false,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -73,8 +133,28 @@
         "current": true,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -85,8 +165,28 @@
         "current": false,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -97,8 +197,28 @@
         "current": true,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -109,8 +229,28 @@
         "current": true,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -121,8 +261,28 @@
         "current": false,
         "history": [
             {
-                "date": "2021.04.18",
+                "date": "2021-04-18",
                 "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
                 "link": "https://www.google.com"
             }
         ]
@@ -130,6 +290,33 @@
     {
         "id": 9,
         "name": "chocolate",
-        "current": false
+        "current": false,
+        "history": [
+            {
+                "date": "2021-04-18",
+                "quantity": 4,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-04-01",
+                "quantity": 3,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-20",
+                "quantity": 1,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-03-10",
+                "quantity": 6,
+                "link": "https://www.google.com"
+            },
+            {
+                "date": "2021-02-01",
+                "quantity": 8,
+                "link": "https://www.google.com"
+            }
+        ]
     }
 ]

@@ -1,28 +1,31 @@
-input.quantity {
-    font-size: 1.7rem;
-    line-height: 0.2rem;
-    max-width: 45px;
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
+button.add-remove-current {
+    margin-right: 10px;
+}
+
+.title {
+    i.edit-current-link {
+        font-size: 70%;
+        cursor: pointer;
+    }
+}
+
+.quantity-setter {
+    input.quantity {
+        font-size: 1.7rem;
+        line-height: 0.2rem;
+        max-width: 45px;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+input.current-link + button {
+    i {
+        font-size: 20px;
+    }
 }
 
 .order-info-icon {
     cursor: pointer;
-}
-
-.add-remove-current {
-    margin-right: 10px;
-}
-
-button.remove-button {
-    i.fa {
-        color: #dc3545;
-    }
-
-    &:hover {
-        i.fa {
-            color: white;
-        }
-    }
 }

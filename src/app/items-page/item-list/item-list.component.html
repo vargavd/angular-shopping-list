@@ -5,7 +5,7 @@
         </h2>
     </div>
     <div class="card-body">
-        <vdsl-item [inCurrentList]="currentItems" (openModalEvent)="openModal($event)" *ngFor="let item of getItems()"
-            [item]="item"></vdsl-item>
+        <vdsl-item [inCurrentList]="currentItems" (openHistoryModalEvent)="openHistoryModal($event)"
+            *ngFor="let item of getItems()" [item]="item"></vdsl-item>
     </div>
 </div>

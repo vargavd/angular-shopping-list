@@ -10,14 +10,14 @@ export class ItemListComponent {
     @Input() items: IItem[] = [];
     @Input() currentItems: boolean = false;
 
-    @Output() openModalEvent = new EventEmitter<IItem>();
+    @Output() openHistoryModalEvent = new EventEmitter<IItem>();
 
     getItems() {
         return this.items.filter(item => item.current === this.currentItems);
     }
 
-    openModal(item: IItem) {
-        this.openModalEvent.emit(item);
+    openHistoryModal(item: IItem) {
+        this.openHistoryModalEvent.emit(item);
     }
 
     constructor() { }

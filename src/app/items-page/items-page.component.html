@@ -1,18 +1,21 @@
 <div class="row">
     <div class="col-12 col-sm">
-        <vdsl-item-list [items]="items" [currentItems]="true" (openModalEvent)="openModal($event)"></vdsl-item-list>
+        <vdsl-item-list [items]="items" [currentItems]="true" (openHistoryModalEvent)="openHistoryModalEvent($event)">
+        </vdsl-item-list>
     </div>
     <div class="col-12 col-sm">
-        <vdsl-item-list [items]="items" [currentItems]="false" (openModalEvent)="openModal($event)"></vdsl-item-list>
+        <vdsl-item-list [items]="items" [currentItems]="false" (openHistoryModalEvent)="openHistoryModalEvent($event)">
+        </vdsl-item-list>
     </div>
 </div>
 
 <ng-template #itemModalTemplate>
     <div class="modal-header">
         <h4 class="modal-title pull-left">
-            {{ itemInModal.name }}
+            {{ itemInModal.name }} <br />
+            <div class="text-muted font-weight-light h5">Last orders</div>
         </h4>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="closeModal()">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="closeHistoryModal()">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
@@ -22,7 +25,7 @@
                 <div class="date mr-3">
                     <div class="year">{{ order.date.getFullYear() }}</div>
                     <div class="month-day">
-                        {{ order.date.getMonth().toString().padStart(2, '0') + '.' +
+                        {{ (order.date.getMonth()+1).toString().padStart(2, '0') + '.' +
                         order.date.getDate().toString().padStart(2, '0') }}
                     </div>
                 </div>
